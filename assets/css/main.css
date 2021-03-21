@@ -1024,7 +1024,14 @@ blockquote {
     grid-template-columns: 1fr;
     text-align: center;
 }
-
+.post1 iframe {
+   width: 100%;
+   height: 400px;
+}
+.post2 iframe {
+    width: 100%;
+    height: 400px;
+}
 @media screen and (min-width: 1024px) {
 
     .grid-actu {
@@ -1044,7 +1051,14 @@ blockquote {
     .post2 {
         grid-area: post2;
     }
-
+    .post2 iframe {
+        width: 504px;
+        height: 384px;
+    }
+    .post1 iframe {
+        width: 504px;
+        height: 384px;
+    }
 }
 
 /*footer*/
