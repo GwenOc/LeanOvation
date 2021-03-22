@@ -728,7 +728,7 @@ blockquote {
 }
 
 .title-shape2 {
-    display: none;
+   visibility: hidden;
 }
 
 
@@ -784,6 +784,7 @@ blockquote {
 
     .title-shape2 {
         transform: translate(20px, 10px);
+       visibility: visible;
     }
 
     .title2 {
