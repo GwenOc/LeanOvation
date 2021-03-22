@@ -1030,7 +1030,7 @@ blockquote {
 
 
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1650px) {
     .Nom {
         grid-area: Nom;      
         margin-left: -2em;
