@@ -493,11 +493,11 @@ blockquote {
 
 @media (max-width: 768px) {
     .caption {
-     display: none;
+        display: none;
     }
 
 
-    
+
 
     /* .slider .slide .caption {
       position: absolute;
@@ -572,6 +572,8 @@ blockquote {
     padding: 0.5em;
 }
 
+
+
 .section-title {
     color: #255aaa;
     font-weight: 700;
@@ -610,9 +612,21 @@ blockquote {
 }
 
 /*media queries*/
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 992px) {
+
+    .circle {
+        width: 250px;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
     .containerSection {
-        max-width: 80%;
+        background-color: #f2f2f2;
+        max-width: 95%;
+        margin: 2em auto;
+        padding: 0.5em;
     }
 
     .text-cadre {
@@ -620,6 +634,7 @@ blockquote {
     }
 
     .circle {
+        width: 300px;
         display: block;
         border-radius: 100%;
     }
@@ -697,14 +712,25 @@ blockquote {
 
 }
 
+@media screen and (min-width: 1400px) {
+    .containerSection {
+        max-width: 80%;
+    }
+
+    .circle {
+        width: 90%;
+    }
+}
+
 /*expertise*/
 .title2 {
-    font-size: 2.2em;
+    font-size: 1.8em;
 }
 
 .title-shape2 {
-    transform: translate(20px, 10px);
+    display: none;
 }
+
 
 .text-secteur {
     background-color: hsla(100, 100%, 100%, 60%);
@@ -736,7 +762,15 @@ blockquote {
     text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 992px) {
+    .text-secteur {
+        width: 27%;
+        text-align: right;
+        transform: translate(120%, -100%);
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .text-secteur {
         transform: translateY(-100%);
         min-height: 40%;
@@ -746,6 +780,10 @@ blockquote {
         padding: 1em;
         margin-left: 1.7em;
         text-align: left;
+    }
+
+    .title-shape2 {
+        transform: translate(20px, 10px);
     }
 
     .title2 {
@@ -926,12 +964,27 @@ blockquote {
     margin-top: 0.8em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 992px) {
+    .grid-valeur {
+        margin: 2em 5.5em;
+    }
+}
+@media screen and (max-width: 1201px) {
+    .photo {
+        text-align: center;
+    }
+
+    .Nom {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     .grid-about1 {
-        margin: 2.5em 5em;
+        margin: 2.5em 2em;
         display: grid;
-        grid-template-columns: 1fr 0.4fr 1.6fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 0.8fr 1.6fr 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 1fr;
         gap: 0px 25px;
         grid-template-areas:
             "photo photo Nom Nom . ."
@@ -943,8 +996,7 @@ blockquote {
     }
 
     .Nom {
-        grid-area: Nom;
-        padding-top: 2em;
+        grid-area: Nom;       
         margin-left: 2em;
     }
 
@@ -977,6 +1029,17 @@ blockquote {
 
 
 }
+@media screen and (min-width: 1600px) {
+    .Nom {
+        grid-area: Nom;      
+        margin-left: -2em;
+    }
+
+    .Citation {
+        grid-area: Citation;
+        margin-left: -2em;
+    }
+}
 
 /*actu*/
 #about h4 {
@@ -996,8 +1059,8 @@ blockquote {
 
 .btn1 {
     border: 5px solid black;
-    padding: 1em 2em;
-    border-radius: 5%;
+    padding: 0.5em 0.5em;
+    border-radius: 3%;
 }
 
 .btn1:hover {
@@ -1024,15 +1087,22 @@ blockquote {
     grid-template-columns: 1fr;
     text-align: center;
 }
+
 .post1 iframe {
-   width: 100%;
-   height: 400px;
+    width: 100%;
+    height: 400px;
 }
+
 .post2 iframe {
     width: 100%;
     height: 400px;
 }
+
 @media screen and (min-width: 1024px) {
+    .btn1 {
+        padding: 1em 2em;
+        border-radius: 3%;
+    }
 
     .grid-actu {
         margin-bottom: 4em;
@@ -1051,10 +1121,12 @@ blockquote {
     .post2 {
         grid-area: post2;
     }
+
     .post2 iframe {
         width: 504px;
         height: 384px;
     }
+
     .post1 iframe {
         width: 504px;
         height: 384px;
@@ -1224,16 +1296,12 @@ footer {
 
 /*formulaire*/
 .main-form {
-    background: url(img/bkg-form.jpg) no-repeat;
     min-height: 65vh;
-    background-position: top;
-    background-size: cover;
-    justify-content: center;
 }
 
 fieldset {
     margin-top: 1.5em;
-    padding: 2em 2em 0 2em;
+    padding: 0;
 }
 
 label {
@@ -1274,7 +1342,7 @@ textarea {
 }
 
 .form-container {
-    max-width: 60%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -1282,7 +1350,7 @@ input[type=submit],
 input[type=reset] {
     padding: 15px;
     border-radius: 1.5em;
-    width: 25%;
+    width: 50%;
     margin-top: 1em;
     margin-bottom: 1em;
     color: #fff;
@@ -1305,6 +1373,26 @@ input[type=reset]:hover {
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    fieldset {
+        margin-top: 1.5em;
+        padding: 2em 2em 0 2em;
+    }
+
+    .form-container {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    input[type=submit],
+    input[type=reset] {
+        width: 25%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    }
 }
 
 /*fin formulaire*/
