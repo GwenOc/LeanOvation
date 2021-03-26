@@ -731,11 +731,14 @@ blockquote {
     }
 
 }
-
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1441px) {
     .containerSection {
         max-width: 80%;
     }
+
+
+}
+@media screen and (min-width: 1400px) {
 
     .circle {
         width: 90%;
@@ -778,18 +781,21 @@ blockquote {
     text-align: center;
 }
 
-.grid-container3 {
+/* .grid-container3 {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
-}
+} */
 
-.grid-container4 {
+/* .grid-container4 {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
+} */
+.logo-cloud {
+    text-align: center; 
+    margin-top: 0.8em;
 }
-
 
 @media screen and (min-width: 992px) {
 
@@ -815,8 +821,7 @@ blockquote {
     }
 
     .grid-container2 {
-        display: grid;
-        margin-bottom: -4em;
+        display: grid;        
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 0.3fr;
         gap: 0px 25px;
@@ -848,7 +853,7 @@ blockquote {
     }
 
 
-    .grid-container3 {
+    /* .grid-container3 {
         margin-top: 1.5em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -856,37 +861,44 @@ blockquote {
         gap: 0px 10px;
         grid-template-areas:
             "ExpertTitle2 ExpertTitle2 ExpertTitle2 ExpertTitle2 ExpertTitle2 ExpertTitle2"
-            ".greeny missing1 missing2 agreko .";
-    }
+            ".greeny  agreko missing1 missing2 .";
+    /* } */
 
-    .ExpertTitle2 {
-        grid-area: ExpertTitle2;
+    .ExpertTitle2,.expertTitle3 { 
         text-align: left;
         margin-left: 1em;
+        padding-top: 1em;
+       
+        /* -webkit-box-shadow: 11px 9px 13px 0px rgba(0, 0, 0, 0.69);
+-moz-box-shadow:    11px 9px 13px 0px rgba(0, 0, 0, 0.69);
+box-shadow:         11px 9px 13px 0px rgba(0, 0, 0, 0.69); */      
     }
-
-    .greeny {
-        grid-area: greeny;
-        margin-left: 1em;
+    .grid-container2, .grid-container3 {
+        min-height: 45vh;
     }
-
-    .missing1 {
-        grid-area: missing1;
-        background-color: gray;
-        height: 69px;
+    .logobox .clients {
+      justify-content: space-evenly;
     }
-
-    .missing2 {
-        grid-area: missing2;
-        background-color: gray;
-        height: 69px;
+    .separator {
+        width: 30%;
+        margin: 0 auto;
+        border-bottom: 7px solid #ccc;
     }
-
-    .agreko {
-        grid-area: agreko;
+ 
+    .logo-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 3em 3em 3em;
+        margin : 0 auto;
     }
+    .logo-cloud {
+        margin: 0.5em;
+    }
+/* 
 
-    .grid-container4 {
+    /* .grid-container4 {
         margin-top: 4em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -897,71 +909,13 @@ blockquote {
             "logo1 logo2 missing3 missing4 missing5 missing6"
             "missing7 missing8 missing9 missing10 missing11 missing12";
         margin-bottom: 3em;
-    }
+    } */
 
-    .expertTitle3 {
+    /* .expertTitle3 {
         grid-area: expertTitle3;
         margin-left: 1em;
         text-align: left;
-    }
-
-    .logo1 {
-        grid-area: logo1;
-    }
-
-    .logo2 {
-        grid-area: logo2;
-    }
-
-    .missing3 {
-        grid-area: missing3;
-        background-color: gray;
-    }
-
-    .missing4 {
-        grid-area: missing4;
-        background-color: gray;
-    }
-
-    .missing5 {
-        grid-area: missing5;
-        background-color: gray;
-    }
-
-    .missing6 {
-        grid-area: missing6;
-        background-color: gray;
-    }
-
-    .missing7 {
-        grid-area: missing7;
-        background-color: gray;
-    }
-
-    .missing8 {
-        grid-area: missing8;
-        background-color: gray;
-    }
-
-    .missing9 {
-        grid-area: missing9;
-        background-color: gray;
-    }
-
-    .missing10 {
-        grid-area: missing10;
-        background-color: gray;
-    }
-
-    .missing11 {
-        grid-area: missing11;
-        background-color: gray;
-    }
-
-    .missing12 {
-        grid-area: missing12;
-        background-color: gray;
-    }
+    } */
 
     @media screen and (min-width: 1399px) {
         .text-secteur {         
