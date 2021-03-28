@@ -928,6 +928,56 @@ box-shadow:         11px 9px 13px 0px rgba(0, 0, 0, 0.69); */
 
 }
 
+/*expertt2*/
+.grid-secteur {
+    display: grid;
+    grid-template-columns: 0.5fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px 0px;
+    grid-template-areas:
+      "imgIndus indus2"
+      "imgConso conso2"
+      "ImgSante sante2"
+      "imgEnergy energy2";
+  }
+  .imgIndus { grid-area: imgIndus; }
+  .imgConso { grid-area: imgConso; }
+  .ImgSante { grid-area: ImgSante; }
+  .imgEnergy { grid-area: imgEnergy; }
+  .indus2 { grid-area: indus2; }
+  .conso2 { grid-area: conso2; }
+  .sante2 { grid-area: sante2; }
+  .energy2 { grid-area: energy2; }
+  
+  .secteur-box {
+      background-color: #fff;
+      font-size: 120%;
+      font-weight: bolder;
+      text-align: center;
+      padding-top: 2em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .grid-secteur {
+        display: grid;
+        margin : 0 6em;
+        grid-template-columns: 0.3fr 0.8fr 0.3fr 0.8fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px 0px;
+        grid-template-areas:
+          "imgIndus indus2 imgConso conso2"
+          "ImgSante sante2 imgEnergy energy2";
+      }
+      .imgIndus { grid-area: imgIndus; }
+      .indus2 { grid-area: indus2; }
+      .imgConso { grid-area: imgConso; margin-left: 1em;}
+      .conso2 { grid-area: conso2; }
+      .ImgSante { grid-area: ImgSante; }
+      .sante2 { grid-area: sante2; }
+      .imgEnergy { grid-area: imgEnergy; margin-left: 1em; }
+      .energy2 { grid-area: energy2; }
+      
+  }
 
 /*a propos*/
 .link-container {
