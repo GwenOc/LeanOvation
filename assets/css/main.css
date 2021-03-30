@@ -226,7 +226,7 @@ blockquote {
 }
 
 #navbar {
-    --navbar-height: 64px;
+    --navbar-height: 69px;
     position: fixed;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
